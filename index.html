@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allamano Kinyahwe - Multidisciplinary Creative</title>
+    <meta name="description" content="Futuristic portfolio of Alex Nova - UI/UX Designer, 3D Artist, Developer & Motion Graphics Creator">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Cosmic Background Canvas -->
+    <canvas id="cosmic-canvas"></canvas>
+
+    <!-- Sidebar Navigation -->
+    <aside id="sidebar">
+        <div class="sidebar-header">
+            <h1 class="logo chrome-text">ALLAMANO KINYAHWE</h1>
+            <div class="logo-small"><img src="Images/Blog img.jpg"></div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#home" class="nav-item active">
+                <span class="icon">🏠</span>
+                <span class="label">Home</span>
+            </a>
+            
+            <a href="#work" class="nav-item">
+                <span class="icon">💼</span>
+                <span class="label">Work</span>
+            </a>
+
+            <a href="#skills" class="nav-item">
+                <span class="icon">⚡</span>
+                <span class="label">Skills</span>
+            </a>
+            
+            <a href="#contact" class="nav-item">
+                <span class="icon">✉️</span>
+                <span class="label">Contact</span>
+            </a>
+
+            <a href="#blog1" class="nav-item">
+                <span class="icon">📝</span>
+                <span class="label">Skills</span>
+            </a>
+
+            <a href="#testimonials" class="nav-item">
+                <span class="icon">⭐</span>
+                <span class="label">Testimonials</span>
+            </a>
+        </nav>
+
+        <!-- CV Button -->
+          <div class="cv-btn-container">
+            <a href="CV/Allamano_cv.pdf" class="cv-btn" target="_blank" rel="noopener noreferrer">
+              📄 View CV
+             </a>
+          </div>
+
+        <div class="sidebar-footer">
+            <button id="theme-toggle" class="theme-btn">
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <!-- Hero Image Area -->
+                <div class="hero-image-container">
+                    <img src="Images/home.png" 
+                         alt="home" 
+                         class="hero-image"
+                         id="heroImage">
+                    <div class="image-glow"></div>
+                </div>
+
+                <h1 class="hero-title chrome-text">ALLAMANO KINYAHWE</h1>
+                <p class="hero-subtitle">Multidisciplinary Creative Webiste & Graphic Designer</p>
+                <p class="hero-tagline" id="typewriter"></p>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('about')">
+                        Explore the Nebula
+                        <span class="arrow">↓</span>
+                    </button>
+                    <button class="btn btn-outline">View Work</button>
+                </div>
+
+                <div class="skill-badges">
+                    <span class="badge">UI/UX</span>
+                    <span class="badge">3D Art</span>
+                    <span class="badge">Code</span>
+                    <span class="badge">Motion</span>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2 class="section-title chrome-text">About the Architect</h2>
+            
+            <div class="about-grid">
+                <div class="terminal-card glass-card">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="terminal-title">terminal.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">></span> Name</p>
+                        <p class="output">Allamano Kinyahwe - Multidisciplinary Creative based in the digital cosmos</p>
+                        
+                        <p><span class="prompt">></span> cat experience.txt</p>
+                        <p class="output">Several years crafting pixel-perfect interfaces, immersive 3D worlds, and scalable codebases. From startups to enterprises, I transform ideas into digital realities.</p>
+                        
+                        <p><span class="prompt">></span> Skills/</p>
+                        <p class="output">React • TypeScript • Java • Python • C++ • Html• Tailwind • Node.js</p>
+                        
+                        <p><span class="prompt">></span> echo $PHILOSOPHY</p>
+                        <p class="output italic">"Design is not just what it looks like. It's how it works, how it feels, and how it transforms the user's world."</p>
+                        
+                        <p><span class="prompt blink">></span> <span class="cursor">_</span></p>
+                    </div>
+                </div>
+
+                <div class="fact-cards">
+                    <div class="fact-card glass-card" onclick="flipCard(this)">
+                        <div class="card-front">
+                            <span class="fact-icon"><img src="Images/Icon 1.jpg"></span>
+                            <p>Click me!</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Built  web apps🤭🤭</p>
+                        </div>
+                    </div>
+                    <div class="fact-card glass-card" onclick="flipCard(this)">
+                        <div class="card-front">
+                            <span class="fact-icon"><img src="Images/Icon 2.jpg"></span>
+                            <p>Click me!
+                            </p>
+                        </div>
+                        <div class="card-back">
+                            <p>Designed Graphics❤️</p>
+                        </div>
+                    </div>
+                    <div class="fact-card glass-card" onclick="flipCard(this)">
+                        <div class="card-front">
+                            <span class="fact-icon"><img src="Images/Icon 3.jpg"></span>
+                            <p>Click me!</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Web Designer👌 </p>
+                        </div>
+                    </div>
+                    <div class="fact-card glass-card" onclick="flipCard(this)">
+                        <div class="card-front">
+                            <span class="fact-icon"><img src="Images/Icon 4.jpg"></span>
+                            <p>Click me!</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Coffee enthusiast 😁 ☕</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Projects Section -->
+<section id="work" class="projects-section">
+  <h2 class="section-title chrome-text">Featured Projects</h2>
+
+  <div class="projects-scroll">
+    <div class="project-card glass-card">
+      <div class="project-skills">
+        <div class="skill">
+          <span>HTML</span>
+          <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+        </div>
+        <div class="skill">
+          <span>CSS / Tailwind</span>
+          <div class="progress-bar"><div class="progress" style="width: 88%;"></div></div>
+        </div>
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+        </div>
+      </div>
+      <div class="project-info">
+        <span class="project-category">UI/UX</span>
+        <h3>Brew Bite Online</h3>
+        <p>Provides online ordering platform for fast food across the world</p>
+        <div class="project-stats">
+          <span>📈 +340% engagement</span>
+          <span>🏆 3 Awwwards</span>
+          <a href=" https://allamano-design.github.io/Brew-Bite/" class="btn-link" target="_blank">Dont be shy Click me!!</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card glass-card">
+      <div class="project-skills">
+        <div class="skill">
+          <span>Node.js</span>
+          <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+          <span>React</span>
+          <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill">
+          <span>Vite</span>
+          <div class="progress-bar"><div class="progress" style="width: 78%;"></div></div>
+        </div>
+      </div>
+      <div class="project-info">
+        <span class="project-category">Planner</span>
+        <h3>Daily Planner</h3>
+        <p>Daily Purpose Event Planner</p>
+        <div class="project-stats">
+          <span>📈 +500% engagement</span>
+          <span>🏆 Featured on Browsers</span>
+          <a href="https://allamano-design.github.io/daily-planner/" class="btn-link" target="_blank">Dont be shy Click me!!</a>
+        </div>
+      </div>
+    </div>
+
+  <div class="project-card glass-card">
+      <div class="project-skills">
+        <div class="skill">
+          <span>Javascript</span>
+          <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+          <span>Html</span>
+          <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+        </div>
+        <div class="skill">
+          <span>Css</span>
+          <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+        </div>
+      </div>
+      <div class="project-info">
+        <span class="project-category">MOTION</span>
+        <h3>LuxCraft Barbershop</h3>
+        <p>Barbeshop, Spa & Salon (3 in 1)</p>
+        <div class="project-stats">
+          <span>📈 1M+ views</span>
+          <span>🏆 4 Awwwards</span>
+          <a href=" https://allamano-design.github.io/LuxCraft/" class="btn-link" target="_blank">Dont be shy Click me!!</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card glass-card">
+      <div class="project-skills">
+        <div class="skill">
+          <span>Html</span>
+          <div class="progress-bar"><div class="progress" style="width: 92%;"></div></div>
+        </div>
+        <div class="skill">
+          <span>Css</span>
+          <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill">
+          <span>Node.js</span>
+          <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+        </div>
+      </div>
+      <div class="project-info">
+        <span class="project-category">CODE</span>
+        <h3>E-Commerce Website</h3>
+        <p>Open-source React component library with 50k+ downloads</p>
+        <div class="project-stats">
+          <span>📈 10k users</span>
+          <span>🏆 GitHub Trending</span>
+          <a href="https://allamano-design.github.io/E-Commerce-Store/" class="btn-link" target="_blank">Dont be shy Click me!!</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card glass-card">
+      <div class="project-skills">
+        <div class="skill">
+          <span>Python</span>
+          <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+          <span>Html</span>
+          <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+        </div>
+        <div class="skill">
+          <span>Css</span>
+          <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+        </div>
+      </div>
+      <div class="project-info">
+        <span class="project-category">MOTION</span>
+        <h3>AI Health Site</h3>
+        <p>For diseases and curative precautions</p>
+        <div class="project-stats">
+          <span>📈 1M+ views</span>
+          <span>🏆 Ongoing</span>
+          <a href="" class="btn-link" target="_blank">Ongoing!!</a>
+        </div>
+      </div>
+    </div>
+
+     <div class="project-card glass-card">
+      <div class="project-skills">
+        <div class="skill">
+          <span>Java</span>
+          <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+          <span>Html</span>
+          <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+        </div>
+        <div class="skill">
+          <span>Css</span>
+          <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+        </div>
+      </div>
+      <div class="project-info">
+        <span class="project-category">Matrix</span>
+        <h3>Smart Online Calculator</h3>
+        <p>Daily analysis and calculations</p>
+        <div class="project-stats">
+          <span>📈 1M+ views</span>
+          <span>🏆 2 Awards</span>
+           <a href="https://allamano-design.github.io/Java-Smart-Calculator/" class="btn-link" target="_blank">Dont be shy Click Me!</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="project-card glass-card">
+      <div class="project-skills">
+        <div class="skill">
+          <span>Javascript</span>
+          <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+          <span>Html</span>
+          <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+        </div>
+        <div class="skill">
+          <span>Css</span>
+          <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+        </div>
+      </div>
+      <div class="project-info">
+        <span class="project-category">MOTION</span>
+        <h3>3D Image Slider</h3>
+        <p>Rotating Images For Your Site</p>
+        <div class="project-stats">
+          <span>📈 1M+ views</span>
+          <span>🏆 More Awards</span>
+          <a href="https://allamano-design.github.io/3D-Image-Slider/" class="btn-link" target="_blank">Dont be shy Click Me!!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Blog Section -->
+<section id="blog" class="blog-section">
+  <h2 class="section-title chrome-text">Blog Interfaces</h2>
+  <p class="section-subtitle">Thoughts on design, code, and creativity</p>
+
+  <div class="blog-filters">
+    <button class="filter-btn active" onclick="filterBlog('all')">All</button>
+    <button class="filter-btn" onclick="filterBlog('ui-ux')">UI/UX</button>
+    <button class="filter-btn" onclick="filterBlog('dev')">Development</button>
+    <button class="filter-btn" onclick="filterBlog('design')">Design</button>
+  </div>
+
+  <!-- Featured Blog Post -->
+  <div class="blog-featured glass-card">
+    <div class="featured-image">
+      <img src="images/Blog img.jpg" alt="The Future of Web Design in 2025">
+    </div>
+    <div class="featured-content">
+      <span class="blog-category">UI/UX</span>
+      <h3>The Future of Web Design in 2025+</h3>
+      <p>Exploring emerging trends in interactive design and user experience.</p>
+      <div class="blog-meta">
+        <span>⏱️ 8 min</span>
+        <a href="#blog"><button class="read-more">Read More →</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blog Grid -->
+  <div class="blog-grid">
+    <article class="blog-card glass-card" data-category="dev">
+      <div class="blog-thumb">
+        <img src="images/Blog 1 img.jpg" alt="Building 3D Experiences with Three.js" id="blog1">
+      </div>
+      <div class="blog-content">
+        <span class="blog-category">Development</span>
+        <h4>Building 3D Experiences with Adobe Photoshop</h4>
+        <p>A deep dive into creating immersive 3D web applications.</p>
+        <span class="read-time">⏱️ 12 min</span>
+      </div>
+    </article>
+
+    <article class="blog-card glass-card" data-category="design">
+      <div class="blog-thumb">
+        <img src="images/Blog 2 img.jpg" alt="Motion Design Principles for Developers" id="blog2">
+      </div>
+      <div class="blog-content">
+        <span class="blog-category">Design</span>
+        <h4>Motion Design Principles for Developers</h4>
+        <p>How to create animations that enhance user experience.</p>
+        <span class="read-time">⏱️ 6 min</span>
+      </div>
+    </article>
+
+    <article class="blog-card glass-card" data-category="dev">
+      <div class="blog-thumb">
+        <img src="images/Blog 3 img.jpg" alt="Optimizing React Performance" id="blog3">
+      </div>
+      <div class="blog-content">
+        <span class="blog-category">Development</span>
+        <h4>Optimizing React Performance</h4>
+        <p>Advanced techniques for building lightning-fast React apps.</p>
+        <span class="read-time">⏱️ 10 min</span>
+      </div>
+    </article>
+
+    <article class="blog-card glass-card" data-category="ui-ux">
+      <div class="blog-thumb">
+        <img src="images/Blog 4 img.jpg" alt="The Art of Minimalist Design" id="blog4">
+      </div>
+      <div class="blog-content">
+        <span class="blog-category">UI/UX</span>
+        <h4>The Art of Minimalist Design</h4>
+        <p>Less is more: creating impact through simplicity.</p>
+        <span class="read-time">⏱️ 5 min</span>
+      </div>
+    </article>
+
+    <article class="blog-card glass-card" data-category="design">
+      <div class="blog-thumb">
+        <img src="images/Blog 5 img.jpg" alt="Color Theory in Digital Design">
+      </div>
+      <div class="blog-content">
+        <span class="blog-category">Design</span>
+        <h4>Color Theory in Digital Design</h4>
+        <p>Understanding color psychology and application.</p>
+        <span class="read-time">⏱️ 7 min</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials-section">
+  <h2 class="section-title chrome-text">Voices from the Void</h2>
+  <p class="section-subtitle">What clients say about the cosmic journey</p>
+
+  <div class="testimonial-main glass-card">
+    <div class="quote-icon">❝</div>
+    <p class="testimonial-quote" id="activeQuote"></p>
+
+    <div class="testimonial-author">
+      <div class="author-avatar">
+        <img id="activeAvatar" src="images/Ashlene.jpg" alt="Author Avatar">
+      </div>
+      <div class="author-info">
+        <h4 id="authorName">Ashlene Chumilah</h4>
+        <p id="authorRole">CEO, TechVision Inc</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      <div class="testimonial-metric">
+        <div class="metric-value" id="metricValue">+340%</div>
+        <p class="metric-label">Key Result</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonial-nav">
+    <button class="testimonial-thumb glass-card active" onclick="showTestimonial(0)">
+      <div class="thumb-avatar"><img src="images/Ashlene.jpg" alt="Ashlene Chumilah"></div>
+      <div class="thumb-info">
+        <p class="thumb-name">Ashlene Chumilah</p>
+        <p class="thumb-company">TechVision</p>
+      </div>
+      <div class="thumb-stars">⭐⭐⭐⭐⭐</div>
+    </button>
+
+    <button class="testimonial-thumb glass-card" onclick="showTestimonial(1)">
+      <div class="thumb-avatar"><img src="images/Dan.jpg" alt="Marcellas Indeje"></div>
+      <div class="thumb-info">
+        <p class="thumb-name">Marcellas Indeje</p>
+        <p class="thumb-company">CloudScale</p>
+      </div>
+      <div class="thumb-stars">⭐⭐⭐⭐⭐</div>
+    </button>
+
+    <button class="testimonial-thumb glass-card" onclick="showTestimonial(2)">
+      <div class="thumb-avatar"><img src="images/Jose.jpg" alt="Joseph Gitari"></div>
+      <div class="thumb-info">
+        <p class="thumb-name">Joseph Gitari</p>
+        <p class="thumb-company">Pixel Studios</p>
+      </div>
+      <div class="thumb-stars">⭐⭐⭐⭐⭐</div>
+    </button>
+
+    <button class="testimonial-thumb glass-card" onclick="showTestimonial(3)">
+      <div class="thumb-avatar"><img src="images/Kyle.jpg" alt="Kyle Bradley"></div>
+      <div class="thumb-info">
+        <p class="thumb-name">Kyle Bradley</p>
+        <p class="thumb-company">AI Manager</p>
+      </div>
+      <div class="thumb-stars">⭐⭐⭐⭐⭐</div>
+    </button>
+  </div>
+</section>
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h2 class="section-title chrome-text">Contact Portal</h2>
+  <p class="section-subtitle">Let's create something extraordinary together</p>
+
+  <form   action="https://formspree.io/f/manlrdgd" method="POST" class="contact-form glass-card" id="contactForm">
+    <div class="form-group">
+      <label>👤 Name</label>
+      <input type="text" name="name" placeholder="Your name" required>
+    </div>
+
+    <div class="form-group">
+      <label>✉️ Email</label>
+      <input type="email" name="email" placeholder="your@email.com" required>
+    </div>
+
+    <div class="form-group">
+      <label>💬 Message</label>
+      <textarea name="message" placeholder="Tell me about your project..." rows="6" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-full">
+      Launch Message 🚀
+    </button>
+
+    <div class="contact-info">
+      <p>Or reach out directly:</p>
+      <a href="mailto:allamanojoseph00@gmail.com">✉️ allamanojoseph00@gmail.com</a>
+    </div>
+  </form>
+</section>
+
+
+        <!-- Footer Section -->
+        <footer id="footer" class="footer-section">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="chrome-text">ALLAMANO KINYAHWE</h3>
+                    <p>Multidisciplinary Creative</p>
+                    <p class="tagline">"I don't follow trends. I launch them."</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#work">Work</a>
+                        <a href="#blog">Blog</a>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <a href="#contact">Contact</a>
+                        <a href="#testimonials">Testimonials</a>
+                        <a href="mailto:allamanojoseph00@gmail.com">Email</a>
+                        <a href="https://www.linkedin.com/in/allamano-joseph">LinkedIn</a>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Skills</h4>
+                        <a href="#work">React & TypeScript</a>
+                        <a href="#work">UI/UX Design</a>
+                        <a href="#work">3D & Motion</a>
+                        <a href="#work">Full-Stack Dev</a>
+                    </div>
+                </div>
+
+        <div class="footer-social">
+            <a href=" https://instagram.com/m_anor_0"  class="social-link"><i class="fab fa-instagram" style="color: red;"></i></a>
+            <a href=" https://www.linkedin.com/in/allamano-joseph"  class="social-link"><i class="fab fa-linkedin"style="color: blue;"></i></a>
+            <a href="https://www.tiktok.com/@mano_r72"  class="social-link"><i class="fab fa-tiktok" style="color: #de04ba;"></i></a>
+            <a href="https://wa.me/254769610343" target="_blank"  class="social-link"><i class="fab fa-whatsapp" style="color: rgb(23, 151, 23);"></i></a>
+            <a href="https://github.com/Allamano-design"  class="social-link"><i class="fab fa-github" style="color: rgb(137, 223, 9);"></i></a>
+        </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 AllamanoKinyahweCodes. All rights reserved.</p>
+                <p>Designed with 💫 in the digital cosmos</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
