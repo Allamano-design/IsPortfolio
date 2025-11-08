@@ -169,28 +169,28 @@ const testimonials = [
     quote: "Allamano transformed our entire digital presence. The UI/UX redesign resulted in a 340% increase in user engagement. Absolutely phenomenal work.",
     name: "Ashlene Chumilah",
     role: "CEO, TechVision Inc",
-    avatar: "images/Ashlene.jpg",
+    avatar: "Ashlene.jpg",
     metric: "+340%"
   },
   {
     quote: "Working with Allamano was a game-changer. The React framework he built cut our development time in half while improving code quality.",
     name: "Marcellas Indeje",
     role: "CTO, CloudScale",
-    avatar: "images/Dan.jpg",
+    avatar: "Dan.jpg",
     metric: "50% faster"
   },
   {
     quote: "Allamano's 3D work is nothing short of extraordinary. He brought our vision to life in ways we never imagined possible.",
     name: "Joseph Gitari",
     role: "Creative Director, Pixel Studios",
-    avatar: "images/jose.jpg",
+    avatar: "jose.jpg",
     metric: "2M+ views"
   },
   {
     quote: "From concept to launch in record time. Allamano understood our vision and delivered beyond expectations. A true professional.",
     name: "Kyle Bradley",
     role: "AI Manager",
-    avatar: "images/Kyle.jpg",
+    avatar: "Kyle.jpg",
     metric: "3 weeks"
   }
 ];
@@ -287,3 +287,4 @@ window.addEventListener('scroll', () => {
 });
 
 console.log('🚀 Allamano Kinyahwe Portfolio Loaded - Built with cosmic energy ✨');
+
