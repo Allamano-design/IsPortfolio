@@ -183,7 +183,7 @@ const testimonials = [
     quote: "Allamano's 3D work is nothing short of extraordinary. He brought our vision to life in ways we never imagined possible.",
     name: "Joseph Gitari",
     role: "Creative Director, Pixel Studios",
-    avatar: "jose.jpg",
+    avatar: "Jose.jpg",
     metric: "2M+ views"
   },
   {
@@ -287,4 +287,5 @@ window.addEventListener('scroll', () => {
 });
 
 console.log('🚀 Allamano Kinyahwe Portfolio Loaded - Built with cosmic energy ✨');
+
 
